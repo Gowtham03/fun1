@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.report.Attendance"
+    android:background="#dedede"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview_new"
+        android:theme="@style/Widget.AppCompat.ListView"
+        android:layout_above="@+id/button2"
+        android:background="#e8e6e6"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dedede"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginRight="-30dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/start_date"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.27"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="2017-7-1" />
+
+        <EditText
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/end_date"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:text="2017-7-6" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:id="@+id/search"
+            android:background="#528ecb"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp"
+        android:paddingTop="20dp" />
+
+</RelativeLayout>

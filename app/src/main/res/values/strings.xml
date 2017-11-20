@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Report Bee</string>
+    <string name="title_activity_attendance">Attendance</string>
+
+    <string-array name="attendance">
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Half a Day</item>
+    </string-array>
+</resources>
